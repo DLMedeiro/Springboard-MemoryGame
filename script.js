@@ -79,7 +79,6 @@ function handleCardClick(event) {
   if (compare.length===0 && !event.target.classList.contains('clicked')){
     card = event.target
       let color = card.getAttribute('class');
-      console.log(`color = ${color}`);
       compare.push(color);
       card.className += ' clicked'
       card.removeAttribute('id');
@@ -89,18 +88,15 @@ function handleCardClick(event) {
   } else if (compare.length===1 && !event.target.classList.contains('clicked')) {
     card2 = event.target
       let color2 = card2.getAttribute('class');
-      console.log(`color2 = ${color2}`);
       compare.push(color2);
       card.classList.remove('clicked');
       card2.removeAttribute('id');
       scoreCount++
-      console.log(scoreCount);
       score.innerText = `${scoreCount}`
       card2.id = color2;
     
       
       if (compare[0] === compare[1]) {
-        console.log('MATCH')
         card.className += ' clicked'
         card2.className += ' clicked'
       } 
@@ -113,7 +109,6 @@ function handleCardClick(event) {
           card2.id = 'open'
           compare.pop();
           compare.pop();
-          console.log(compare);
         }, 1000)
         
         
