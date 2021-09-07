@@ -1,0 +1,105 @@
+body {
+  background-color: rgba(0,200,200,.05);
+}
+
+#game div {
+  border: 1px solid black;
+  width: 20%;
+  height: 200px;
+  margin: 10px;
+  display: inline-block;
+  background-color:rgba(0,200,200,.25)
+}
+
+.container {
+  background-color: rgba(0,200,200,.1);
+  height: 98vh;
+  display: grid;
+  text-align: center;
+  margin: auto;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
+  background-color:rgba(0,200,200,.25);
+  justify-content: center;
+  display: grid;
+  text-align: center;
+  margin: auto;
+}
+
+button:hover {
+  background-color:rgba(0,200,200,60);
+}
+
+.start {
+  font-size: 3rem;
+  width: 50%;
+}
+
+.scoreTable {
+  font-size: 2rem;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+p {
+  margin-top: 10px;
+}
+
+/* Tiles Images */
+#yellow {
+  background-image: url('images/pexels-lilartsy-3216571.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 200px;
+  background-position: center;
+  max-width: 20%;
+
+}
+#red {
+  background-image: url('images/pexels-daria-shevtsova-3597310.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 200px;
+  background-position: center;
+  max-width: 20%;
+
+}
+#blue {
+  background-image: url('images/pexels-vlada-karpovich-4668379.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 200px;
+  background-position: center;
+  max-width: 20%;
+
+}
+#green {
+  background-image: url('images/pexels-bich-tran-760721.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 200px;
+  max-width: 20%;
+
+}
+#orange {
+  background-image: url('images/pexels-prateek-katyal-2740954.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 200px;
+  background-position: center;
+  max-width: 20%;
+
+}#purple {
+  background-image: url('images/pexels-tara-winstead-8849324.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 200px;
+  background-position: center;
+  max-width: 20%;
+}
