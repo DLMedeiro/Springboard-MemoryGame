@@ -79,7 +79,6 @@ function handleCardClick(event) {
   if (compare.length===0 && !event.target.classList.contains('clicked')){
     card = event.target
       let color = card.getAttribute('class');
-      card.style.backgroundColor = color;
       console.log(`color = ${color}`);
       compare.push(color);
       card.className += ' clicked'
@@ -90,7 +89,6 @@ function handleCardClick(event) {
   } else if (compare.length===1 && !event.target.classList.contains('clicked')) {
     card2 = event.target
       let color2 = card2.getAttribute('class');
-      card2.style.backgroundColor = color2;
       console.log(`color2 = ${color2}`);
       compare.push(color2);
       card.classList.remove('clicked');
