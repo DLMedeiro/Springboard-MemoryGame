@@ -5,6 +5,7 @@ const score = document.getElementById('score')
 const savedScore = JSON.parse(localStorage.getItem('savedScore'));
 const bestScore = document.getElementById('bestScore')
 const disappear = document.getElementById('disappear');
+const newGame = document.getElementById('newGame')
 
 const COLORS = [
   "red",
@@ -109,7 +110,7 @@ function handleCardClick(event) {
           card2.id = 'open'
           compare.pop();
           compare.pop();
-        }, 1000)
+        }, 2000)
         
         
       } else {
@@ -135,6 +136,10 @@ document.addEventListener('click', function (e) {
   if(e.target.className === 'start'){
     createDivsForColors(shuffledColors);
     disappear.innerHTML = '';
+    let resetButton = document.createElement('button')
+    resetButton.classList.add('reset');
+    resetButton.innerText='New Game'
+    newGame.appendChild(resetButton);
   }
 });
 

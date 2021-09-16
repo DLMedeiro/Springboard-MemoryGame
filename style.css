@@ -2,9 +2,11 @@ body {
   background-color: rgba(0,200,200,.05);
 }
 
+
 #game div {
+  align-items: center;  
   border: 1px solid black;
-  width: 20%;
+  width: 200px;
   height: 200px;
   margin: 10px;
   display: inline-block;
@@ -13,10 +15,9 @@ body {
 
 .container {
   background-color: rgba(0,200,200,.1);
-  height: 98vh;
-  display: grid;
+  height: auto;
   text-align: center;
-  margin: auto;
+  padding: 25px;
 }
 
 button {
@@ -37,17 +38,23 @@ button:hover {
 .start {
   font-size: 3rem;
   width: 50%;
+  margin-top: 50px;
 }
 
 .scoreTable {
+  font-size: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* background-color:rgba(0,200,200,.25) */
+}
+
+.reset{
   font-size: 2rem;
-  display: flex;
-  align-content: center;
-  justify-content: space-evenly;
+  margin-bottom: 25px;
 }
 
 p {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 /* Tiles Images */
@@ -55,27 +62,27 @@ p {
   background-image: url('images/pexels-lilartsy-3216571.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  max-height: 200px;
+  max-height: auto;
   background-position: center;
-  max-width: 20%;
+  /* max-width: 20%; */
 
 }
 #red {
   background-image: url('images/pexels-daria-shevtsova-3597310.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  max-height: 200px;
+  max-height: auto;
   background-position: center;
-  max-width: 20%;
+  /* max-width: 20%; */
 
 }
 #blue {
   background-image: url('images/pexels-vlada-karpovich-4668379.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  max-height: 200px;
+  max-height: auto;
   background-position: center;
-  max-width: 20%;
+  /* max-width: 20%; */
 
 }
 #green {
@@ -83,23 +90,23 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  max-height: 200px;
-  max-width: 20%;
+  max-height: auto;
+  /* max-width: 20%; */
 
 }
 #orange {
   background-image: url('images/pexels-prateek-katyal-2740954.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  max-height: 200px;
+  max-height: auto;
   background-position: center;
-  max-width: 20%;
+  /* max-width: 20%; */
 
 }#purple {
   background-image: url('images/pexels-tara-winstead-8849324.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  max-height: 200px;
+  max-height: auto;
   background-position: center;
-  max-width: 20%;
+  /* max-width: 20%; */
 }
