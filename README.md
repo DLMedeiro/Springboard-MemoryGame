@@ -1,7 +1,7 @@
 # Memory Matching Game
 
 ## Check it out at: 
-https://dlmedeiro.github.io/Springboard_MemoryGame/
+https://dlmedeiro.github.io/Springboard-MemoryGame/
 
 ## How it works
 
